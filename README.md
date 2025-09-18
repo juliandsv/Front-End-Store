@@ -69,10 +69,10 @@ Just open the FrontEnd/index.html file in your browser (recommended with Live Se
 ## Screenshots
 
 - **Home / Product list**  
-  ![Listado](docs/listado.png)
+  ![Listado](listado.png)
 
 - **Product detail**  
-  ![Detalle](docs/detalle.png)
+  ![Detalle](detalle.png)
 
 - **Shopping cart**  
-  ![Carrito](docs/carrito.png)
+  ![Carrito](carrito.png)
