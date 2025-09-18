@@ -1,0 +1,49 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# --- SPRING: real configs OUT, example IN ---
+/src/main/resources/application.properties
+/src/main/resources/application-*.properties
+/src/main/resources/application.yml
+/src/main/resources/application-*.yml
+!/src/main/resources/application-example.properties
+
+# --- Misc útiles ---
+*.log
+.DS_Store
+Thumbs.db
+
+# Mantén los seeds SQL del repo (no ignores la carpeta db/)
+# (si en tu .gitignore hubiera reglas que ignoran *.sql, elimínalas)
+

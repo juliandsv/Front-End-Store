@@ -1,0 +1,506 @@
+:root {
+
+    --primario: #9C27B0;
+    --primario-oscuro: #89119D;
+    --secundario: #FFCE00; 
+    --secundario-oscuro: rgb(233, 287, 22) ;
+    --blanco: #fff;
+    --negro: #000;
+    
+    --fuenteppal:'Staatliches' , cursive;
+}
+/** esto es para que se vea bien el box sizing y se pueda usar la medida rem de manera adecuada **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/** Estas de abajo son los globales **/
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5; 
+}
+p{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100% ;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteppal);
+}
+h1{
+    font-size: 4rem;
+
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+/**esto es el header**/
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+.header__logo {
+    margin-top: 3rem;
+
+}
+/**navegacion**/
+
+.navegacion {
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+    
+}
+.navegacion__enlace {
+    font-family: var(--fuenteppal);
+    color: var(--blanco);
+    font-size: 3rem;
+
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+/**footer**/
+.footer {
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto {
+    text-align: center;
+    font-family: var(--fuenteppal);
+    font-size: 2.2rem;
+   
+}
+/**grid**/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+@media (min-width: 768px ){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+   
+
+/**producto**/
+
+.producto {
+    background-color: var(--primario-oscuro);
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    border-radius: 7%;
+    
+
+}
+
+
+.producto__nombre {
+    font-size: 4rem;
+    font-family: var(--fuenteppal);
+    margin: 1rem 0;
+    text-align: center;
+
+
+
+}
+.producto__precio {
+    font-size: 2.8rem;
+    font-family: var(--fuenteppal);
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--secundario);
+}
+.producto__imagen {
+
+    border-radius: 7%;
+
+}
+  
+
+
+@media (min-width: 768px) {
+    .grafico--node {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    
+    }
+}
+/**nosotros**/
+
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    
+
+}
+
+
+.nosotros__imagen{
+    border-radius: 7%;
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.nosotros__imagen {
+    grid-row: 1 / 2;
+   
+
+}
+@media (min-width: 768px) {
+    .nosotros__imagen {
+        grid-column: 2 / 3;
+    }
+}
+/**bloques**/
+
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .bloques {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+   
+}
+.bloque {
+    text-align: center;
+}
+.bloque__titulo {
+    margin: 0;
+}
+
+/**pagina producto**/
+
+
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.formulario__campo, .formulario__campo__cantidad {
+    
+    
+    
+    background-color: var(--secundario);
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+     
+}
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuenteppal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundario-oscuro);
+}
+.camisa__precio {
+    font-size: 2.8rem;
+    font-family: var(--fuenteppal);
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--secundario);
+}
+.camisa__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 7%;
+    margin-bottom: 2rem;
+}
+
+
+
+/**pagina carrito**/
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: auto;
+    
+
+}
+
+.buscador__input {
+    border-color: var(--primario-oscuro);
+    border-width: 1rem;
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--secundario);
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.buscador__input::placeholder {
+    color: var(--negro); /* Color de la lupa y el texto */
+}
+
+/* Estilo para el contenedor del carrito */
+
+.carrito {
+    text-align: center;
+}
+
+.carrito__articles {
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 7%;
+   
+    
+}
+.carrito__detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 60%; 
+    text-align: left;
+    background-color: var(--primario);
+    
+}
+.carrito__detalles p {
+    font-size: 18px; 
+    margin: 5px 0;   
+    color: var(--blanco);    
+    font-weight: 400; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.carrito__detalles h3 {
+   text-decoration: underline;
+}
+
+.carrito__imagen {
+    width: 30%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 7%;
+    
+}
+
+.carrito__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primario-oscuro);
+    color: var(--blanco);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito__eliminar {
+    background-color: var(--secundario);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.carrito__eliminar:hover {
+    background-color: var(--secundario-oscuro);
+}
+
+@media (max-width: 768px) {
+    .carrito__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carrito__imagen {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; 
+    }
+
+    .carrito__detalles {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .carrito__detalles h3 {
+        font-size: 1rem;
+    }
+
+    .carrito__eliminar {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .carrito__item {
+        padding: 15px;
+    }
+
+    .carrito__detalles h3 {
+        font-size: 1rem;
+    }
+
+    .carrito__eliminar {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+/**Alerta para el carrito */
+
+.alerta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--secundario);
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alerta.oculto {
+    opacity: 0;
+    pointer-events: none;
+}
+/**Paginacion **/
+
+.carrito__control {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+
+/* Estilo para el label de la opción de paginación */
+.carrito__control label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Estilo para el select del número de productos por página */
+.carrito__control select {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--secundario);
+    color: #333;
+    cursor: pointer;
+    width: 120px;
+    transition: all 0.3s ease;
+}
+
+
+.carrito__control select:focus {
+    border-color: var(--secundario); 
+    outline: none;
+    background-color: #e8f5e9;
+}
+
+
+.carrito__control option {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+
+
+.carrito__paginacion {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrito__paginacion button {
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--secundario);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carrito__paginacion button:hover {
+    background-color: var(--secundario-oscuro);
+}

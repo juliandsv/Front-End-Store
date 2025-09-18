@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito FrontEndStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+        <header class="header">
+            <a href="index.html" >
+                <img class="header__logo" src="img/logo.png" alt="logotipo">
+            </a>
+        </header>
+        <nav class="navegacion">
+            <a class="navegacion__enlace " href="index.html">Tienda</a>
+            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+            <a class="navegacion__enlace navegacion__enlace--activo" href="carrito.html"> Carrito</a>
+        </nav>
+        <div class="buscador">
+            <input class="buscador__input" type="text" placeholder="🔍 Buscar producto">
+        </div>
+        <main class="carrito">
+            <h1 class="titulo">Carrito de compras</h1>
+            <div class="carrito__control" style="margin-bottom: 1rem; text-align: center;">
+                <label for="itemsPorPagina"></label>
+                <select id="itemsPorPagina">
+                    <option value="3">3</option>
+                    <option value="6" selected>6</option>
+                    <option value="9">9</option>
+                </select> productos por página
+            </div>
+            <div class="carrito__articles"></div>
+
+            <div class="carrito__paginacion"></div>
+           
+
+        </main>
+
+
+
+
+
+
+
+        <footer class="footer">
+            <p class="footer__texto">&copy; 2025 Julian Sacristan - Todos los derechos reservados</p>
+        </footer>
+        
+    
+</body>
+</html>
