@@ -52,13 +52,9 @@ mvn spring-boot:run
 
 ---
 
-## Abrir frontend:
-Abre el archivo:
+## Abrir frontend: 
 
-FrontEnd/index.html
-
-
-en tu navegador (recomendado usar la extensión Live Server en VS Code).
+Abre el archivo FrontEnd/index.html en tu navegador (recomendado usar la extensión Live Server en VS Code).
 
 ---
 
