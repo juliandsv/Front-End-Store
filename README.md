@@ -28,10 +28,12 @@ cd Front-End-Store/store-api
 
 ## Confifurar la base de datos:
 
+```bash
 # src/main/resources/application-example.properties → application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/front_end_store?useSSL=false&serverTimezone=UTC
 spring.datasource.username=YOUR_USER
 spring.datasource.password=YOUR_PASSWORD
+```
 
 ---
 
