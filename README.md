@@ -14,7 +14,7 @@ Los usuarios pueden **navegar por los productos**, **ver detalles** y **gestiona
 * **MySQL** (con 14 camisetas precargadas)  
 * **Maven**  
 * **HTML5, CSS3, JavaScript** (Fetch API)
-* 
+  
 ---
 
 ## ⚙️ Instalación y configuración  
