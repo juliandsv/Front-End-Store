@@ -39,8 +39,10 @@ spring.datasource.password=YOUR_PASSWORD
 
 ## Importar la base de datos:
 
+```bash
 mysql -u YOUR_USER -p -e "CREATE DATABASE IF NOT EXISTS front_end_store CHARACTER SET utf8mb4;"
 mysql -u YOUR_USER -p front_end_store < db/camisetas_seed.sql
+```
 
 ---
 
@@ -51,7 +53,12 @@ mvn spring-boot:run
 ---
 
 ## Abrir frontend:
-Just open the FrontEnd/index.html file in your browser (recommended with Live Server extension in VS Code).
+Abre el archivo:
+
+FrontEnd/index.html
+
+
+en tu navegador (recomendado usar la extensión Live Server en VS Code).
 
 ---
 
